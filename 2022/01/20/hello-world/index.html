@@ -25,9 +25,9 @@
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1642683174345">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1642683174345">
-    <link rel="stylesheet" href="/css/style.css?v=1642683174345">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1642684841408">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1642684841409">
+    <link rel="stylesheet" href="/css/style.css?v=1642684841409">
      
     
 <meta name="generator" content="Hexo 6.0.0"></head>
@@ -174,19 +174,19 @@
   
       <div class="nexmoe-post-footer">
           <section class="nexmoe-comment">
-    <div id="gitment"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'weixiabing', // 你的 GitHub ID
-    repo: 'weixiabing.github.io', // 存储评论的 repo
-    oauth: {
-        client_id: 'd5ced5289d8c93bbbfbe', // 你的 client ID
-        client_secret: '5dd68b357f4f9c4e62e949d5dc5840e00d88ce82' // 你的 client secret
-    },
-})
-gitment.render('gitment')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'd5ced5289d8c93bbbfbe',
+        clientSecret: '5dd68b357f4f9c4e62e949d5dc5840e00d88ce82',
+        id: window.location.pathname,
+        repo: 'weixiabing.github.io',
+        owner: 'weixiabing',
+        admin: 'weixiabing'
+    })
+    gitalk.render('gitalk')
 </script>
 </section>
       </div>
@@ -223,7 +223,7 @@ gitment.render('gitment')
 
  
 
-<script async src="/js/app.js?v=1642683174348"></script>
+<script async src="/js/app.js?v=1642684841413"></script>
 
 
 
