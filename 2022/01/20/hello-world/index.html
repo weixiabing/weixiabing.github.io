@@ -25,9 +25,9 @@
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1642682643170">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1642682643170">
-    <link rel="stylesheet" href="/css/style.css?v=1642682643170">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1642683174345">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1642683174345">
+    <link rel="stylesheet" href="/css/style.css?v=1642683174345">
      
     
 <meta name="generator" content="Hexo 6.0.0"></head>
@@ -174,23 +174,20 @@
   
       <div class="nexmoe-post-footer">
           <section class="nexmoe-comment">
-    <style>
-  #nexmoe-content .nexmoe-comment {
-    background-color: #fff;
-    border-top: 20px solid #f5f6f5;
-  }
-</style>
-<script
-  async
-  src="https://comments.app/js/widget.js?2"
-  data-comments-app-website="fiEzol64"
-  data-limit="5"
-  data-color=""
-  data-dislikes="0"
-  data-outlined="0"
-  data-colorful="1"
-></script>
-
+    <div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'weixiabing', // 你的 GitHub ID
+    repo: 'weixiabing.github.io', // 存储评论的 repo
+    oauth: {
+        client_id: 'd5ced5289d8c93bbbfbe', // 你的 client ID
+        client_secret: '5dd68b357f4f9c4e62e949d5dc5840e00d88ce82' // 你的 client secret
+    },
+})
+gitment.render('gitment')
+</script>
 </section>
       </div>
   
@@ -226,7 +223,7 @@
 
  
 
-<script async src="/js/app.js?v=1642682643173"></script>
+<script async src="/js/app.js?v=1642683174348"></script>
 
 
 
