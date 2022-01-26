@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <title>白嫖cloudflare搭建属于自己的git加速站 - Hexo</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="不想自己动手的话，文末也有搭建好的，可以直接去白嫖！  基于开源项目gh-proxy地址：–&gt;点击访问&lt;– cloudflare地址:–&gt;点击访问&lt;– 首先访问cloudflare注册一个你自己的账户 然后点击workers  之后弹出来这个界面，你需要在输入框中输入你自己的workers的名字 请注意！一定要方便记忆，不要乱输，这个会出现在你的网址中！！！ 请注意！一定要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="白嫖cloudflare搭建属于自己的git加速站">
+<meta property="og:url" content="http://example.com/2022/01/20/1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="不想自己动手的话，文末也有搭建好的，可以直接去白嫖！  基于开源项目gh-proxy地址：–&gt;点击访问&lt;– cloudflare地址:–&gt;点击访问&lt;– 首先访问cloudflare注册一个你自己的账户 然后点击workers  之后弹出来这个界面，你需要在输入框中输入你自己的workers的名字 请注意！一定要方便记忆，不要乱输，这个会出现在你的网址中！！！ 请注意！一定要">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504f17bc1e7dfec6_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504fd81a68c1d92e_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15046fd13cea89037_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504c9de6511f79d4_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504fac1a4f064e16_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/150478a6d17e91fc1_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15042c59fbe8811a6_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504601c1eeb22b4f_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15041d8fdeceac16b_1_post.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15046ce831dde2fe4_1_post.png">
+<meta property="article:published_time" content="2022-01-20T14:31:40.000Z">
+<meta property="article:modified_time" content="2022-01-26T10:37:23.255Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="cf">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504f17bc1e7dfec6_1_post.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1643194419307">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1643194419307">
+    <link rel="stylesheet" href="/css/style.css?v=1643194419308">
+     
+    
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/weixiabing/weixiabing@latest/header_.png)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="John Doe" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/weixiabing/weixiabing@latest/13848491.jpg" alt="John Doe"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="John Doe">
+            <img src="https://cdn.jsdelivr.net/gh/weixiabing/weixiabing@latest/13848491.jpg" alt="John Doe" alt="John Doe">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>2</div>
+        <div><span>Tags</span>1</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://t.me/n1ko66" target="_blank" mdui-tooltip="{content: 'telegram'}" style="color: rgb(144,144,255);background-color: rgba(8, 174, 249, .15);">
+            <i class="nexmoefont icon-telegram"></i>
+        </a><a class="mdui-ripple" href="https://github.com/weixiabing/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/cf/" style="font-size: 10px;">cf</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 John Doe
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
+              <img data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/150442a18f67edcd2_1_post.jpg" data-sizes="auto" alt="白嫖cloudflare搭建属于自己的git加速站" class="lazyload">
+              <h1>白嫖cloudflare搭建属于自己的git加速站</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年01月20日</a>
+</div>
+
+      
+
+      <p><strong>不想自己动手的话，文末也有搭建好的，可以直接去白嫖！</strong></p>
+<hr>
+<p>基于开源项目gh-proxy地址：–&gt;<a target="_blank" rel="noopener" href="https://github.com/hunshcn/gh-proxy.git">点击访问</a>&lt;–</p>
+<p>cloudflare地址:–&gt;<a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">点击访问</a>&lt;–</p>
+<p>首先访问cloudflare注册一个你自己的账户</p>
+<p>然后点击workers</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504f17bc1e7dfec6_1_post.png" alt="img" class="lazyload"></p>
+<p>之后弹出来这个界面，你需要在输入框中输入你自己的workers的名字</p>
+<p><strong>请注意！一定要方便记忆，不要乱输，这个会出现在你的网址中！！！</strong></p>
+<p><strong>请注意！一定要方便记忆，不要乱输，这个会出现在你的网址中！！！</strong></p>
+<p><strong>请注意！一定要方便记忆，不要乱输，这个会出现在你的网址中！！！</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504fd81a68c1d92e_1_post.png" alt="img" class="lazyload"></p>
+<p>输入好后点set up</p>
+<p>然后选择订阅模式，白嫖怪直接free！</p>
+<p>免费版本每天的访问次数是10w次，应该是远远够用的！</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15046fd13cea89037_1_post.png" alt="img" class="lazyload"></p>
+<p>然后要验证邮箱！</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504c9de6511f79d4_1_post.png" alt="img" class="lazyload"></p>
+<p>去你邮箱完成验证</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504fac1a4f064e16_1_post.png" alt="img" class="lazyload"></p>
+<p>验证完成后刷新，点击创建</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/150478a6d17e91fc1_1_post.png" alt="img" class="lazyload"></p>
+<p>然后按下图填写，之后点创建</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15042c59fbe8811a6_1_post.png" alt="img" class="lazyload"></p>
+<p>然后点击快速编辑</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1504601c1eeb22b4f_1_post.png" alt="img" class="lazyload"></p>
+<p>将下面的代码复制 —&gt;<a target="_blank" rel="noopener" href="https://github.com/hunshcn/gh-proxy/blob/master/index.js">点击查看源码</a>&lt;–</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br></pre></td><td class="code"><pre><span class="line">&#x27;use strict&#x27;</span><br><span class="line">/**</span><br><span class="line"> * static files (404.html, sw.js, conf.js)</span><br><span class="line"> */</span><br><span class="line">const ASSET_URL = &#x27;https://hunshcn.github.io/gh-proxy/&#x27;</span><br><span class="line">// 前缀，如果自定义路由为example.com/gh/*，将PREFIX改为 &#x27;/gh/&#x27;，注意，少一个杠都会错！</span><br><span class="line">const PREFIX = &#x27;/&#x27;</span><br><span class="line">// git使用cnpmjs镜像、分支文件使用jsDelivr镜像的开关，0为关闭，默认开启</span><br><span class="line">const Config = &#123;</span><br><span class="line">    jsdelivr: 1,</span><br><span class="line">    cnpmjs: 1</span><br><span class="line">&#125;</span><br><span class="line">/** @type &#123;RequestInit&#125; */</span><br><span class="line">const PREFLIGHT_INIT = &#123;</span><br><span class="line">    status: 204,</span><br><span class="line">    headers: new Headers(&#123;</span><br><span class="line">        &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;,</span><br><span class="line">        &#x27;access-control-allow-methods&#x27;: &#x27;GET,POST,PUT,PATCH,TRACE,DELETE,HEAD,OPTIONS&#x27;,</span><br><span class="line">        &#x27;access-control-max-age&#x27;: &#x27;1728000&#x27;,</span><br><span class="line">    &#125;),</span><br><span class="line">&#125;</span><br><span class="line">const exp1 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/(?:releases|archive)\/.*$/i</span><br><span class="line">const exp2 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/(?:blob|raw)\/.*$/i</span><br><span class="line">const exp3 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/(?:info|git-).*$/i</span><br><span class="line">const exp4 = /^(?:https?:\/\/)?raw\.(?:githubusercontent|github)\.com\/.+?\/.+?\/.+?\/.+$/i</span><br><span class="line">const exp5 = /^(?:https?:\/\/)?gist\.(?:githubusercontent|github)\.com\/.+?\/.+?\/.+$/i</span><br><span class="line">const exp6 = /^(?:https?:\/\/)?github\.com\/.+?\/.+?\/tags.*$/i</span><br><span class="line">/**</span><br><span class="line"> * @param &#123;any&#125; body</span><br><span class="line"> * @param &#123;number&#125; status</span><br><span class="line"> * @param &#123;Object&lt;string, string&gt;&#125; headers</span><br><span class="line"> */</span><br><span class="line">function makeRes(body, status = 200, headers = &#123;&#125;) &#123;</span><br><span class="line">    headers[&#x27;access-control-allow-origin&#x27;] = &#x27;*&#x27;</span><br><span class="line">    return new Response(body, &#123;status, headers&#125;)</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> * @param &#123;string&#125; urlStr</span><br><span class="line"> */</span><br><span class="line">function newUrl(urlStr) &#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        return new URL(urlStr)</span><br><span class="line">    &#125; catch (err) &#123;</span><br><span class="line">        return null</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">addEventListener(&#x27;fetch&#x27;, e =&gt; &#123;</span><br><span class="line">    const ret = fetchHandler(e)</span><br><span class="line">        .catch(err =&gt; makeRes(&#x27;cfworker error:\n&#x27; + err.stack, 502))</span><br><span class="line">    e.respondWith(ret)</span><br><span class="line">&#125;)</span><br><span class="line">function checkUrl(u) &#123;</span><br><span class="line">    for (let i of [exp1, exp2, exp3, exp4, exp5, exp6 ]) &#123;</span><br><span class="line">        if (u.search(i) === 0) &#123;</span><br><span class="line">            return true</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return false</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> * @param &#123;FetchEvent&#125; e</span><br><span class="line"> */</span><br><span class="line">async function fetchHandler(e) &#123;</span><br><span class="line">    const req = e.request</span><br><span class="line">    const urlStr = req.url</span><br><span class="line">    const urlObj = new URL(urlStr)</span><br><span class="line">    let path = urlObj.searchParams.get(&#x27;q&#x27;)</span><br><span class="line">    if (path) &#123;</span><br><span class="line">        return Response.redirect(&#x27;https://&#x27; + urlObj.host + PREFIX + path, 301)</span><br><span class="line">    &#125;</span><br><span class="line">    // cfworker 会把路径中的 `//` 合并成 `/`</span><br><span class="line">    path = urlObj.href.substr(urlObj.origin.length + PREFIX.length).replace(/^https?:\/+/, &#x27;https://&#x27;)</span><br><span class="line">    if (path.search(exp1) === 0 || path.search(exp5) === 0 || path.search(exp6) === 0 || !Config.cnpmjs &amp;&amp; (path.search(exp3) === 0 || path.search(exp4) === 0)) &#123;</span><br><span class="line">        return httpHandler(req, path)</span><br><span class="line">    &#125; else if (path.search(exp2) === 0) &#123;</span><br><span class="line">        if (Config.jsdelivr) &#123;</span><br><span class="line">            const newUrl = path.replace(&#x27;/blob/&#x27;, &#x27;@&#x27;).replace(/^(?:https?:\/\/)?github\.com/, &#x27;https://cdn.jsdelivr.net/gh&#x27;)</span><br><span class="line">            return Response.redirect(newUrl, 302)</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            path = path.replace(&#x27;/blob/&#x27;, &#x27;/raw/&#x27;)</span><br><span class="line">            return httpHandler(req, path)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else if (path.search(exp3) === 0) &#123;</span><br><span class="line">        const newUrl = path.replace(/^(?:https?:\/\/)?github\.com/, &#x27;https://github.com.cnpmjs.org&#x27;)</span><br><span class="line">        return Response.redirect(newUrl, 302)</span><br><span class="line">    &#125; else if (path.search(exp4) === 0) &#123;</span><br><span class="line">        const newUrl = path.replace(/(?&lt;=com\/.+?\/.+?)\/(.+?\/)/, &#x27;@$1&#x27;).replace(/^(?:https?:\/\/)?raw\.(?:githubusercontent|github)\.com/, &#x27;https://cdn.jsdelivr.net/gh&#x27;)</span><br><span class="line">        return Response.redirect(newUrl, 302)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        return fetch(ASSET_URL + path)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> * @param &#123;Request&#125; req</span><br><span class="line"> * @param &#123;string&#125; pathname</span><br><span class="line"> */</span><br><span class="line">function httpHandler(req, pathname) &#123;</span><br><span class="line">    const reqHdrRaw = req.headers</span><br><span class="line">    // preflight</span><br><span class="line">    if (req.method === &#x27;OPTIONS&#x27; &amp;&amp;</span><br><span class="line">        reqHdrRaw.has(&#x27;access-control-request-headers&#x27;)</span><br><span class="line">    ) &#123;</span><br><span class="line">        return new Response(null, PREFLIGHT_INIT)</span><br><span class="line">    &#125;</span><br><span class="line">    const reqHdrNew = new Headers(reqHdrRaw)</span><br><span class="line">    let urlStr = pathname</span><br><span class="line">    if (urlStr.startsWith(&#x27;github&#x27;)) &#123;</span><br><span class="line">        urlStr = &#x27;https://&#x27; + urlStr</span><br><span class="line">    &#125;</span><br><span class="line">    const urlObj = newUrl(urlStr)</span><br><span class="line">    /** @type &#123;RequestInit&#125; */</span><br><span class="line">    const reqInit = &#123;</span><br><span class="line">        method: req.method,</span><br><span class="line">        headers: reqHdrNew,</span><br><span class="line">        redirect: &#x27;manual&#x27;,</span><br><span class="line">        body: req.body</span><br><span class="line">    &#125;</span><br><span class="line">    return proxy(urlObj, reqInit)</span><br><span class="line">&#125;</span><br><span class="line">/**</span><br><span class="line"> *</span><br><span class="line"> * @param &#123;URL&#125; urlObj</span><br><span class="line"> * @param &#123;RequestInit&#125; reqInit</span><br><span class="line"> */</span><br><span class="line">async function proxy(urlObj, reqInit) &#123;</span><br><span class="line">    const res = await fetch(urlObj.href, reqInit)</span><br><span class="line">    const resHdrOld = res.headers</span><br><span class="line">    const resHdrNew = new Headers(resHdrOld)</span><br><span class="line">    const status = res.status</span><br><span class="line">    if (resHdrNew.has(&#x27;location&#x27;)) &#123;</span><br><span class="line">        let _location = resHdrNew.get(&#x27;location&#x27;)</span><br><span class="line">        if (checkUrl(_location))</span><br><span class="line">            resHdrNew.set(&#x27;location&#x27;, PREFIX + _location)</span><br><span class="line">        else &#123;</span><br><span class="line">            reqInit.redirect = &#x27;follow&#x27;</span><br><span class="line">            return proxy(newUrl(_location), reqInit)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    resHdrNew.set(&#x27;access-control-expose-headers&#x27;, &#x27;*&#x27;)</span><br><span class="line">    resHdrNew.set(&#x27;access-control-allow-origin&#x27;, &#x27;*&#x27;)</span><br><span class="line">    resHdrNew.delete(&#x27;content-security-policy&#x27;)</span><br><span class="line">    resHdrNew.delete(&#x27;content-security-policy-report-only&#x27;)</span><br><span class="line">    resHdrNew.delete(&#x27;clear-site-data&#x27;)</span><br><span class="line">    return new Response(res.body, &#123;</span><br><span class="line">        status,</span><br><span class="line">        headers: resHdrNew,</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>替换掉原来所有代码，先点下面的保存，等待保存成功后，再点发送</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15041d8fdeceac16b_1_post.png" alt="img" class="lazyload"></p>
+<p>显示如下就成功了</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/15046ce831dde2fe4_1_post.png" alt="img" class="lazyload"></p>
+<p>到此教程结束，喜欢的点个赞再走吧！</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>John Doe<br>
+        <strong>Link：</strong><a href="http://example.com/2022/01/20/1/" title="http:&#x2F;&#x2F;example.com&#x2F;2022&#x2F;01&#x2F;20&#x2F;1&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2022&#x2F;01&#x2F;20&#x2F;1&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/cf/" rel="tag">cf</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'd5ced5289d8c93bbbfbe',
+        clientSecret: '5dd68b357f4f9c4e62e949d5dc5840e00d88ce82',
+        id: window.location.pathname,
+        repo: 'weixiabing.github.io',
+        owner: 'weixiabing',
+        admin: 'weixiabing'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1643194419310"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+    <!-- baidu Analytics -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?0e33fb62c13344e415c0473084548a8e';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+
+</html>
