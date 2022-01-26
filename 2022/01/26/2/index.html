@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <title>Hexo：Markdown 简明语法手册 - Hexo</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Hexo：Markdown 简明语法手册hexo部署hexo new a #新建 hexo s –debug #本地部署 hexo g -d #github部署 Markdown 语法Markdown 语法简明便捷，既弥补了传统纯文本缺少样式的不足，又降低了传统 Word、HTML 等样式文本的技术门槛，自 2004 年被 John Gruber 创造以来，得到一定范围的传播和使用。2012 年">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo：Markdown 简明语法手册">
+<meta property="og:url" content="http://example.com/2022/01/26/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo：Markdown 简明语法手册hexo部署hexo new a #新建 hexo s –debug #本地部署 hexo g -d #github部署 Markdown 语法Markdown 语法简明便捷，既弥补了传统纯文本缺少样式的不足，又降低了传统 Word、HTML 等样式文本的技术门槛，自 2004 年被 John Gruber 创造以来，得到一定范围的传播和使用。2012 年">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/3e2c71cf40722054cd54e1d19b24d964.png">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1e1d3c64c52adbe2fb4ed5b0960c9858.gif">
+<meta property="og:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/7587afb319bc9d6cb2f76d66482363a0.gif">
+<meta property="article:published_time" content="2022-01-26T11:00:30.000Z">
+<meta property="article:modified_time" content="2022-01-26T11:52:16.399Z">
+<meta property="article:author" content="Niko">
+<meta property="article:tag" content="md">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/3e2c71cf40722054cd54e1d19b24d964.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1643198003991">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1643198003991">
+    <link rel="stylesheet" href="/css/style.css?v=1643198003991">
+     
+    
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/weixiabing/weixiabing@latest/header_.png)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="Niko" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/weixiabing/weixiabing@latest/13848491.jpg" alt="Niko"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Niko">
+            <img src="https://cdn.jsdelivr.net/gh/weixiabing/weixiabing@latest/13848491.jpg" alt="Niko" alt="Niko">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>3</div>
+        <div><span>Tags</span>2</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://t.me/n1ko66" target="_blank" mdui-tooltip="{content: 'telegram'}" style="color: rgb(144,144,255);background-color: rgba(8, 174, 249, .15);">
+            <i class="nexmoefont icon-telegram"></i>
+        </a><a class="mdui-ripple" href="https://github.com/weixiabing/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/cf/" style="font-size: 10px;">cf</a> <a href="/tags/md/" style="font-size: 10px;">md</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 Niko
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: NaN%;"> 
+              <img data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/6e17e05bb8366bbce85e45e4d15292a4.jpeg" data-sizes="auto" alt="Hexo：Markdown 简明语法手册" class="lazyload">
+              <h1>Hexo：Markdown 简明语法手册</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年01月26日</a>
+</div>
+
+      
+
+      <h1 id="Hexo：Markdown-简明语法手册"><a href="#Hexo：Markdown-简明语法手册" class="headerlink" title="Hexo：Markdown 简明语法手册"></a>Hexo：Markdown 简明语法手册</h1><h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><p>hexo new a #新建</p>
+<p>hexo s –debug #本地部署</p>
+<p>hexo g -d #github部署</p>
+<h2 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h2><p>Markdown 语法简明便捷，既弥补了传统纯文本缺少样式的不足，又降低了传统 Word、HTML 等样式文本的技术门槛，自 2004 年被 John Gruber 创造以来，得到一定范围的传播和使用。2012 年 Github 强势崛起，并官方推荐 Markdown 格式，这几年得以广泛传播，甚至衍生出了林林总总数十种版本 / 变体。不过，今天我只谈 Hexo 相关内容，Hexo 默认自带的 Markdown 渲染器为<code>hexo-renderer-marked</code>，本文就是对其支持语法的一个总结。</p>
+<p>由于暂时用不上数学公式，本文 <strong>不包含</strong> <code>LaTeX 公式</code> 相关语法。</p>
+<h2 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># &#123; 一级标题 &#125;</span><br><span class="line">## &#123; 二级标题 &#125;</span><br><span class="line">### &#123; 三级标题 &#125;</span><br><span class="line">#### &#123; 四级标题 &#125;</span><br><span class="line">##### &#123; 五级标题 &#125;</span><br><span class="line">###### &#123; 六级标题 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>以 <code>#</code> 开头，以标题内容结尾，中间填充至少一个<code>Space</code>。标题共有 6 级。一级标题和二级标题也可以使用如下语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123; 一级标题 &#125;</span><br><span class="line">===</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123; 二级标题 &#125;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 中华人民共和国</span><br><span class="line">## 湖北省</span><br><span class="line">### 武汉市</span><br><span class="line">#### 武昌区</span><br><span class="line">##### 徐东街道</span><br><span class="line">###### 群星城社区</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<h1 id="中华人民共和国"><a href="#中华人民共和国" class="headerlink" title="中华人民共和国"></a>中华人民共和国</h1><h2 id="湖北省"><a href="#湖北省" class="headerlink" title="湖北省"></a>湖北省</h2><h3 id="武汉市"><a href="#武汉市" class="headerlink" title="武汉市"></a>武汉市</h3><h4 id="武昌区"><a href="#武昌区" class="headerlink" title="武昌区"></a>武昌区</h4><h5 id="徐东街道"><a href="#徐东街道" class="headerlink" title="徐东街道"></a>徐东街道</h5><h6 id="群星城社区"><a href="#群星城社区" class="headerlink" title="群星城社区"></a>群星城社区</h6><h2 id="层级列表"><a href="#层级列表" class="headerlink" title="层级列表"></a>层级列表</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* &#123; 一级目录名称 &#125;</span><br><span class="line">  * &#123; 二级目录名称 &#125;</span><br><span class="line">    * &#123; 三级目录名称 &#125;</span><br><span class="line">      * &#123; 四级目录名称 &#125;</span><br><span class="line">        * &#123; 五级目录名称 &#125;</span><br><span class="line">          ...</span><br></pre></td></tr></table></figure>
+
+<p>层级列表每下一级的缩进都要比上一级多 2 个 <code>Space</code> 或 1 个<code>Tab</code>，且第一级前面不可超过 3 个空格。层级列表一般仅用一、二、三级列表，第一级的标识为实心圆点，第二级的标识为空心圆点，第三级的标识为实心方点。不过理论上可以有无数层级，但从第三级开始层级标识均为实心方点。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* 文档</span><br><span class="line">  * 什么是 Hexo</span><br><span class="line">  * 安装</span><br><span class="line">    * 安装前提</span><br><span class="line">      * 安装 Git</span><br><span class="line">        * Git 注意事项</span><br><span class="line">      * 安装 Node.js</span><br><span class="line">      * 安装 Hexo</span><br><span class="line">  * 使用</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<ul>
+<li>文档<ul>
+<li>什么是 Hexo</li>
+<li>安装<ul>
+<li>安装前提<ul>
+<li>安装 Git<ul>
+<li>Git 注意事项</li>
+</ul>
+</li>
+<li>安装 Node.js</li>
+<li>安装 Hexo</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>使用</li>
+</ul>
+</li>
+</ul>
+<h2 id="斜体-粗体-删除线-高亮"><a href="#斜体-粗体-删除线-高亮" class="headerlink" title="斜体 / 粗体 / 删除线 / 高亮"></a>斜体 / 粗体 / 删除线 / 高亮</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*&#123; 斜体内容 &#125;*</span><br><span class="line">**&#123; 粗体内容 &#125;**</span><br><span class="line">~~&#123; 删除内容 &#125;~~</span><br><span class="line">`&#123; 高亮内容 &#125;`</span><br><span class="line">&lt;u&gt;&#123; 高亮内容 &#125;&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">他望车外看了看，说：*“我买几个橘子去。你就在此地，不要走动。”*</span><br><span class="line">他望车外看了看，说：**“我买几个橘子去。你就在此地，不要走动。”**</span><br><span class="line">他望车外看了看，说：~~“我买几个橘子去。你就在此地，不要走动。”~~</span><br><span class="line">他望车外看了看，说：`“我买几个橘子去。你就在此地，不要走动。”`</span><br><span class="line">他望车外看了看，说：&lt;u&gt;“我买几个橘子去。你就在此地，不要走动。”&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>他望车外看了看，说：<em>“我买几个橘子去。你就在此地，不要走动。”</em><br>他望车外看了看，说：<strong>“我买几个橘子去。你就在此地，不要走动。”</strong><br>他望车外看了看，说：<del>“我买几个橘子去。你就在此地，不要走动。”</del><br>他望车外看了看，说：<code>“我买几个橘子去。你就在此地，不要走动。”</code><br>他望车外看了看，说：<u>“我买几个橘子去。你就在此地，不要走动。”</u></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; &#123; 引用内容 &#125;</span><br><span class="line">&gt;&gt; &#123; 嵌套引用内容 &#125;</span><br><span class="line">&gt;&gt;&gt; &#123; 再次嵌套引用内容 &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 他望车外看了看，说：“我买几个橘子去。你就在此地，不要走动。”</span><br><span class="line">&gt;&gt; 他望车外看了看，说：“我买几个橘子去。你就在此地，不要走动。”</span><br><span class="line">&gt;&gt;&gt; 他望车外看了看，说：“我买几个橘子去。你就在此地，不要走动。”</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<blockquote>
+<p>他望车外看了看，说：“我买几个橘子去。你就在此地，不要走动。”</p>
+<blockquote>
+<p>他望车外看了看，说：“我买几个橘子去。你就在此地，不要走动。”</p>
+<blockquote>
+<p>他望车外看了看，说：“我买几个橘子去。你就在此地，不要走动。”</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ &#123; 列表 1 内容 &#125;</span><br><span class="line">+ &#123; 列表 2 内容 &#125;</span><br><span class="line">+ &#123; 列表 3 内容 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>以 <code>*</code> 或<code>+</code>或 <code>-</code> 开头，以列表内容结尾，中间填充至少一个<code>Space</code>。标识为实心圆点。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">BAT 指：</span><br><span class="line">+ Baidu</span><br><span class="line">+ Alibaba</span><br><span class="line">+ Tencent</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<p>BAT 指：</p>
+<ul>
+<li>Baidu</li>
+<li>Alibaba</li>
+<li>Tencent</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. &#123; 列表内容 1&#125;</span><br><span class="line">1. &#123; 列表内容 2&#125;</span><br><span class="line">1. &#123; 列表内容 3&#125;</span><br></pre></td></tr></table></figure>
+
+<p>全部使用 <code>1.</code>，会自增。也可使用<code>1.</code>、<code>2.</code>、<code>3.</code> 这样手动指定序号。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">洗手步骤：</span><br><span class="line">1. 用干净自来水（温水或冷水）润湿双手，关掉水龙头，涂抹肥皂。</span><br><span class="line">1. 将您的手和肥皂揉搓在一起，让它起泡沫。趁着肥皂起沫时揉搓手背、手指间和指甲下。</span><br><span class="line">1. 擦洗双手至少 20 秒。</span><br><span class="line">  * 需要定时吗？ 大概是将“生日快乐”歌从头到尾哼唱两遍的时间。</span><br><span class="line">  * 时间不足 20 秒可以吗？建议 20 秒以上。</span><br><span class="line">1. 顺着干净自来水洗净双手。</span><br><span class="line">1. 用干净毛巾擦干双手或直接风干。</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<p>洗手步骤：</p>
+<ol>
+<li>用干净自来水（温水或冷水）润湿双手，关掉水龙头，涂抹肥皂。</li>
+<li>将您的手和肥皂揉搓在一起，让它起泡沫。趁着肥皂起沫时揉搓手背、手指间和指甲下。</li>
+<li>擦洗双手至少 20 秒。</li>
+</ol>
+<ul>
+<li>需要定时吗？ 大概是将“生日快乐”歌从头到尾哼唱两遍的时间。</li>
+<li>时间不足 20 秒可以吗？建议 20 秒以上。</li>
+</ul>
+<ol>
+<li><p>顺着干净自来水洗净双手。</p>
+</li>
+<li><p>用干净毛巾擦干双手或直接风干。</p>
+<h3 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- [_] &#123;（未完成）任务名称 &#125;</span><br><span class="line">- [x] &#123;（已完成）任务名称 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>任务框需要配合有序或无序列表使用，故列入列表章节。中括号 <code>[]</code> 表复选框。若表示 <strong>未完成</strong> 则<code>[</code>和 <code>]</code> 之间必须有且仅有一个 <code>Space</code>，若表示 <strong>完成</strong> 则<code>[</code>和 <code>]</code> 之间输入一个字母 <code>x</code>。右中括号<code>]</code> 和<code>任务名称</code> 之间至少有一个<code>Space</code>。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- [ ] 跑步</span><br><span class="line">- [ ] 骑车</span><br><span class="line">- [ ] 吃饭</span><br><span class="line">- [ ] 睡觉</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> 跑步</li>
+<li><input disabled="" type="checkbox"> 骑车</li>
+<li><input checked="" disabled="" type="checkbox"> 吃饭</li>
+<li><input disabled="" type="checkbox"> 睡觉</li>
+</ul>
+<p>▲ 任务列表 示例截图</p>
+<h2 id="图片-音频-视频"><a href="#图片-音频-视频" class="headerlink" title="图片 / 音频 / 视频"></a>图片 / 音频 / 视频</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![&#123; 链接文本 &#125;](&#123; 链接 &#125; &#123;title 内容 &#125;)</span><br></pre></td></tr></table></figure>
+
+<p>静态图、动态图、视频和音频都是一样的引用方式，只是音频没写样式很丑。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![](006_tupianyinpinshipin_001.png)</span><br><span class="line">![](006_tupianyinpinshipin_002.gif)</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong><br><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/3e2c71cf40722054cd54e1d19b24d964.png" alt="静态图 示例截图" class="lazyload"><br><a target="_blank" rel="noopener" href="https://image.kejiwanjia.com/wp-content/uploads/2022/01/1e1d3c64c52adbe2fb4ed5b0960c9858.gif"><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/1e1d3c64c52adbe2fb4ed5b0960c9858.gif" alt="▲ 动态图 示例动图" class="lazyload"></a></p>
+<p>▲ 动态图 示例动图</p>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><h3 id="行内式"><a href="#行内式" class="headerlink" title="行内式"></a>行内式</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#123; 链接文本 &#125;](&#123; 链接 &#125; &#123;title 内容 &#125;)</span><br></pre></td></tr></table></figure>
+
+<p><code>[]</code>里为链接文字。<code>()</code>里前者为链接地址，后者为链接的 title 属性（链接的 title 属性：鼠标悬停在链接上时浮现的悬浮框的内容），后者非必须。链接地址和链接的 title 属性之间需至少有一个<code>Space</code>。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://www.baidu.com)[百度](http://www.baidu.com &quot; 百度一下，你就知道 &quot;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<p><a target="_blank" rel="noopener" href="http://www.baidu.com/">百度</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.baidu.com/" title=" 百度一下，你就知道 ">百度</a></p>
+<h3 id="自动连接"><a href="#自动连接" class="headerlink" title="自动连接"></a>自动连接</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;&#123; 链接或 Email&#125;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>直接在 <code>&lt;&gt;</code> 之间输入链接或 Email。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;http://www.baidu.com/&gt;&lt;admin@baidu.com&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong><br><a target="_blank" rel="noopener" href="http://www.baidu.com/">http://www.baidu.com/</a></p>
+<p><a href="mailto:&#x61;&#100;&#x6d;&#x69;&#x6e;&#x40;&#x62;&#x61;&#x69;&#100;&#117;&#46;&#x63;&#111;&#109;">&#x61;&#100;&#x6d;&#x69;&#x6e;&#x40;&#x62;&#x61;&#x69;&#100;&#117;&#46;&#x63;&#111;&#109;</a></p>
+<h2 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h2><p>网页中，锚点其实就是 <strong>页内超链接</strong> ，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我在本节的标题写下一个锚点，在目录中写下对应链接，点击链接就能跳过来。<br><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#123; 链接文字 &#125;](#&#123;index&#125;) &lt;div id=&quot;&#123;index&#125;&quot;&gt;&#123; 标题 &#125;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>跟超链接同理，只是链接地址改为锚点元素的 <code>id</code> 属性值。标题可省。<br>注意：<code>div</code>只是这里演示，任何 HTML 元素均可。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[第一句](#41)，[第二句](#42)，[第三句](#43) &lt;div id=&quot;41&quot;&gt;&lt;/div&gt; 轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。&lt;div id=&quot;42&quot;&gt;&lt;/div&gt; 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。&lt;div id=&quot;43&quot;&gt;&lt;/div&gt; 我轻轻的招手， 作别西天的云彩。</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://gh.136699.xyz/https://github.com/weixiabing/wordpress/blob/main/pic/2022/1/26/7587afb319bc9d6cb2f76d66482363a0.gif" alt="▲ 锚点 示例动图" class="lazyload"></p>
+<p>▲ 锚点 示例动图</p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><h3 id="符号写法"><a href="#符号写法" class="headerlink" title="符号写法"></a>符号写法</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|&#123; 表头 1&#125;|&#123; 表头 2&#125;|&#123; 表头 3&#125;|</span><br><span class="line">|-|-|-|</span><br><span class="line">|&#123; 内容 1-1&#125;|&#123; 内容 1-2&#125;|&#123; 内容 1-3&#125;|</span><br><span class="line">|&#123; 内容 2-1&#125;|&#123; 内容 2-2&#125;|&#123; 内容 2-3&#125;|</span><br><span class="line">|&#123; 内容 3-1&#125;|&#123; 内容 3-2&#125;|&#123; 内容 3-3&#125;|</span><br></pre></td></tr></table></figure>
+
+<p><code>|</code>控制分列，<code>-</code>控制分行，<code>:</code>控制对齐方式。<br>第一行为 <code>表头行</code>，使用竖线符将各表头隔开，此外最前和最后表头两侧分别有个竖线符将整体框起来。<br>注意：表格 <strong>首行的前一行</strong> 必须 <strong>留空</strong> ，否则符号写法的表格无法生效。<br>第二行为 <code>控制行</code>，要求竖线符的数量和表头行一致，且每个竖线之间至少有一个中划线符。<br>第三行及以下为 <code>数据行</code>，要求竖线符的数量和表头行一致，每两个相邻的竖线符之间是表格数据。<br>表格默认左对齐。在第二行可以使用<code>:</code>（冒号）搭配中划线符主动控制对应列内容的对齐方式。两个竖线符之间为：</p>
+<ul>
+<li><code>:-</code>：表示左对齐</li>
+<li><code>-</code>或<code>:-:</code>：表示中对齐</li>
+<li><code>-:</code>：表示右对齐</li>
+</ul>
+<p>注意：无论是否主动控制对齐方式，控制行的每一列都至少要有一个中划线符。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 名字 | 性别 | 年龄 | 部门 |</span><br><span class="line">|-|-|-:|-|</span><br><span class="line">| 张三 | 男 |21| 产品 |</span><br><span class="line">| 李四 | 女 |18| 开发 |</span><br><span class="line">| 王二 | 男 |20| 销售 |</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>性别</th>
+<th align="right">年龄</th>
+<th>部门</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td>男</td>
+<td align="right">21</td>
+<td>产品</td>
+</tr>
+<tr>
+<td>李四</td>
+<td>女</td>
+<td align="right">18</td>
+<td>开发</td>
+</tr>
+<tr>
+<td>王二</td>
+<td>男</td>
+<td align="right">20</td>
+<td>销售</td>
+</tr>
+</tbody></table>
+<p>▲ 表格 - 符号写法 示例<br>注意：此处截图表格风格样式与 Hexo 默认格式不同，这取决于 Hexo 的主题。</p>
+<h3 id="HTML-写法"><a href="#HTML-写法" class="headerlink" title="HTML 写法"></a>HTML 写法</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">  &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;th&gt;&#123; 表头 1&#125;&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;&#123; 表头 2&#125;&lt;/th&gt;</span><br><span class="line">      &lt;th&gt;&#123; 表头 3&#125;&lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/thead&gt;</span><br><span class="line">  &lt;tbody&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 1-1&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 1-2&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 1-3&#125;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 2-1&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 2-2&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 2-3&#125;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 3-1&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 3-2&#125;&lt;/td&gt;</span><br><span class="line">      &lt;td&gt;&#123; 内容 3-3&#125;&lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<p>Markdown 中的表格还可以用 HTML 标签的形式来写。跟 <em>符号写法</em> 最大的区别主要是 <em>HTML 写法</em> 虽然无法控制整列的对齐方式，但可以单独控制每个单元格的对齐方式。控制对齐方式的方式是给需要控制元素添加<code>align</code> 标签，例：</p>
+<ul>
+<li><code>&lt;th align=&quot;middle&quot;&gt;</code></li>
+<li><code>&lt;td align=&quot;left&quot;&gt;</code></li>
+<li><code>&lt;td align=&quot;right&quot;&gt;</code></li>
+</ul>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">  &lt;thead&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;th&gt; 名字 &lt;/th&gt;</span><br><span class="line">      &lt;th&gt; 性别 &lt;/th&gt;</span><br><span class="line">      &lt;th&gt; 年龄 &lt;/th&gt;</span><br><span class="line">      &lt;th&gt; 部门 &lt;/th&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/thead&gt;</span><br><span class="line">  &lt;tbody&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt; 张三 &lt;/td&gt;</span><br><span class="line">      &lt;td&gt; 男 &lt;/td&gt;</span><br><span class="line">      &lt;td align=&quot;right&quot;&gt;21&lt;/td&gt;</span><br><span class="line">      &lt;td&gt; 产品 &lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt; 李四 &lt;/td&gt;</span><br><span class="line">      &lt;td&gt; 女 &lt;/td&gt;</span><br><span class="line">      &lt;td align=&quot;right&quot;&gt;18&lt;/td&gt;</span><br><span class="line">      &lt;td&gt; 开发 &lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">      &lt;td&gt; 王二 &lt;/td&gt;</span><br><span class="line">      &lt;td&gt; 男 &lt;/td&gt;</span><br><span class="line">      &lt;td align=&quot;right&quot;&gt;20&lt;/td&gt;</span><br><span class="line">      &lt;td&gt; 销售 &lt;/td&gt;</span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">  &lt;/tbody&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th> 名字 </th>
+      <th> 性别 </th>
+      <th> 年龄 </th>
+      <th> 部门 </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> 张三 </td>
+      <td> 男 </td>
+      <td align="right">21</td>
+      <td> 产品 </td>
+    </tr>
+    <tr>
+      <td> 李四 </td>
+      <td> 女 </td>
+      <td align="right">18</td>
+      <td> 开发 </td>
+    </tr>
+    <tr>
+      <td> 王二 </td>
+      <td> 男 </td>
+      <td align="right">20</td>
+      <td> 销售 </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>▲ 表格 - HTML 写法 示例<br>注意：此处截图表格风格样式与 Hexo 默认格式不同，这取决于 Hexo 的主题。</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; 注释内容 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>反斜杠后不加空格紧跟注释内容即可注释。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\## 我不再是标题</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong><br>## 我不再是标题</p>
+<p>▲ 表格 - HTML 写法 示例</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---___***</span><br></pre></td></tr></table></figure>
+
+<p>在一行起始使用 <code>***</code> 或 <code>---</code> 或 <code>___</code> 表示分割线。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">下面有条分割线  --- </span><br><span class="line">上下各有一条分割线___ </span><br><span class="line">上下各有一条分割线***</span><br></pre></td></tr></table></figure>
+
+<p>注意：由于 <code>---</code> 还用于二级标题，因而在使用这种方式表分割线时，其前一行必须留空。</p>
+<p><strong>效果</strong><br>下面有条分割线  — </p>
+<p>上下各有一条分割线___</p>
+<p> 上下各有一条分割线</p>
+<hr>
+<p>▲ 分割线 示例</p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><h3 id="行内代码块"><a href="#行内代码块" class="headerlink" title="行内代码块"></a>行内代码块</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`&#123; 代码部分 &#125;`</span><br></pre></td></tr></table></figure>
+
+<p>使用 ```（重音符）框起来的部分为代码块。<br>重音符：半角状态下，**按住** <code>Shift</code> 键，同时按下键盘字母区域的数字 1 的左侧相邻按键，输出符号即为重音符。<br>由于重音符是个特殊的控制字符，代码块内 <strong>原样输出</strong> 重音符（两个重音符中间输入重音符）无法直接实现，但可通过其它方式实现，分以下几种情况：</p>
+<ul>
+<li><p>如果两个重音符中间的内容除了包含重音符还 <strong>含有其它内容</strong>，则在最外层需要用两个连续重音符夹起来。</p>
+</li>
+<li><p>如果两个重音符中间的内容 </p>
+<p>只包含重音符</p>
+<p>，没有其它内容，则分以下情况：</p>
+<ul>
+<li><p>如果两个重音符中间的重音符 <strong>只有一个</strong>，则除了用两个连续重音符夹起来以外，作为内容的这一个重音符两侧必须至少各有一个空格。</p>
+</li>
+<li><p>如果两个重音符中间的重音符 </p>
+<p>只有两个</p>
+<p>，分两种情况：</p>
+<ul>
+<li>两个重音符 <strong>连续</strong>，我还没有找到办法原样输出这两个重音符。</li>
+<li>两个重音符 <strong>不连续</strong>（即两个重音符之间有空格），则将作为内容的两个重音符看做一个整体，这个整体的两侧必须至少各有一个空格。</li>
+</ul>
+</li>
+<li><p>如果两个重音符中间的重音符有 <strong>两个以上</strong>，则除了用两个连续重音符夹起来以外，将作为内容的多个重音符看做一个整体，这个整体的两侧必须至少各有一个空格。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">今天我们来了解一下 `Java` 的语法规则。</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong><br><code>今天我们来了解一下 </code>Java<code> 的语法规则。</code></p>
+<p>▲ 行内代码块 示例</p>
+<h3 id="多行代码块"><a href="#多行代码块" class="headerlink" title="多行代码块"></a>多行代码块</h3><p><strong>语法</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x27;&#x27;&#x27; java 如何在 Java 中声明变量</span><br><span class="line">int i = 1;</span><br><span class="line">&#x27;&#x27;&#x27;&#x27;&#x27;&#x27; &#123;type&#125; &#123;explain&#125;int i = 1;&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>注意：由于多行代码块的特殊性，无法在代码块内输入三个连续的重音符，这里用 <strong>单引号代表重音符</strong> 。<br>在代码的前后各起一行，只输入连续的三个重音符即可表示代码块。在第一行的三个重音符后空一格可指定 <strong>代码语言</strong> （可选），不区分大小写。再空一格可指定 <strong>代码块标题</strong>（可选），可用单引号 / 双引号括起来，不括也行。</p>
+<p><strong>示例</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x27;&#x27;&#x27; java 如何在 Java 中声明变量</span><br><span class="line">int i = 1;</span><br><span class="line">&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><strong>效果</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java 如何在 Java 中声明变量</span><br><span class="line"><span class="keyword">int</span> i = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>▲ 多行代码块 示例截图</p>
+<h2 id="特殊转义字符"><a href="#特殊转义字符" class="headerlink" title="特殊转义字符"></a>特殊转义字符</h2><p>在编写 Markdown 时，想要原样输出一些控制字符就需要先对其 <strong>转义</strong>，通常的做法是在待转义字符前添加反斜杠符``，但有时这种方法会失效（具体哪些清空未有总结），稳定原样输出的方式是直接使用特殊字符的编码，对应如下：</p>
+<p><strong>常用 HTML 特殊字符编码对照表</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">特殊符号</th>
+<th align="left">命名实体</th>
+<th align="left">十进制编码</th>
+<th align="left">中文名称</th>
+<th align="left">英文名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-</td>
+<td align="left">&minus;</td>
+<td align="left">-</td>
+<td align="left">减号</td>
+<td align="left">Minus sign</td>
+</tr>
+<tr>
+<td align="left">!</td>
+<td align="left">无</td>
+<td align="left">!</td>
+<td align="left">惊叹号</td>
+<td align="left">Exclamation mark</td>
+</tr>
+<tr>
+<td align="left">“</td>
+<td align="left">&quot;</td>
+<td align="left">“</td>
+<td align="left">双引号</td>
+<td align="left">Quotation mark</td>
+</tr>
+<tr>
+<td align="left">#</td>
+<td align="left">无</td>
+<td align="left">#</td>
+<td align="left">数字标志</td>
+<td align="left">Number sign</td>
+</tr>
+<tr>
+<td align="left">$</td>
+<td align="left">无</td>
+<td align="left">$</td>
+<td align="left">美元标志</td>
+<td align="left">Dollar sign</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">无</td>
+<td align="left">%</td>
+<td align="left">百分号</td>
+<td align="left">Percent sign</td>
+</tr>
+<tr>
+<td align="left">&amp;</td>
+<td align="left">&amp;</td>
+<td align="left">&amp;</td>
+<td align="left">地址符</td>
+<td align="left">Ampersand</td>
+</tr>
+<tr>
+<td align="left">‘</td>
+<td align="left">无</td>
+<td align="left">‘</td>
+<td align="left">单引号</td>
+<td align="left">Apostrophe</td>
+</tr>
+<tr>
+<td align="left">(</td>
+<td align="left">无</td>
+<td align="left">(</td>
+<td align="left">左小括号</td>
+<td align="left">Left parenthesis</td>
+</tr>
+<tr>
+<td align="left">)</td>
+<td align="left">无</td>
+<td align="left">)</td>
+<td align="left">右小括号</td>
+<td align="left">Right parenthesis</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">无</td>
+<td align="left">*</td>
+<td align="left">星号</td>
+<td align="left">Asterisk</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td align="left">无</td>
+<td align="left">+</td>
+<td align="left">加号</td>
+<td align="left">Plus sign</td>
+</tr>
+<tr>
+<td align="left">/</td>
+<td align="left">无</td>
+<td align="left">/</td>
+<td align="left">斜杠</td>
+<td align="left">Slash</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">&lt;</td>
+<td align="left">&lt;</td>
+<td align="left">小于号</td>
+<td align="left">Less than</td>
+</tr>
+<tr>
+<td align="left">=</td>
+<td align="left">无</td>
+<td align="left">=</td>
+<td align="left">等号</td>
+<td align="left">Equals sign</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">&gt;</td>
+<td align="left">&gt;</td>
+<td align="left">大于号</td>
+<td align="left">Greater than</td>
+</tr>
+<tr>
+<td align="left">?</td>
+<td align="left">无</td>
+<td align="left">?</td>
+<td align="left">问号</td>
+<td align="left">Question mark</td>
+</tr>
+<tr>
+<td align="left">@</td>
+<td align="left">无</td>
+<td align="left">@</td>
+<td align="left">at 符</td>
+<td align="left">Commercial at</td>
+</tr>
+<tr>
+<td align="left">[</td>
+<td align="left">无</td>
+<td align="left">[</td>
+<td align="left">左中括号</td>
+<td align="left">Left square bracket</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">无</td>
+<td align="left">\</td>
+<td align="left">反斜杠</td>
+<td align="left">Reverse solidus (backslash)</td>
+</tr>
+<tr>
+<td align="left">]</td>
+<td align="left">无</td>
+<td align="left">]</td>
+<td align="left">右中括号</td>
+<td align="left">Right square bracket</td>
+</tr>
+<tr>
+<td align="left">{</td>
+<td align="left">无</td>
+<td align="left">{</td>
+<td align="left">左大括号</td>
+<td align="left">Left curly brace</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td align="left">无</td>
+<td align="left">|</td>
+<td align="left">竖线</td>
+<td align="left">Vertical bar</td>
+</tr>
+<tr>
+<td align="left">}</td>
+<td align="left">无</td>
+<td align="left">}</td>
+<td align="left">右大括号</td>
+<td align="left">Right curly brace</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>Niko<br>
+        <strong>Link：</strong><a href="http://example.com/2022/01/26/2/" title="http:&#x2F;&#x2F;example.com&#x2F;2022&#x2F;01&#x2F;26&#x2F;2&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2022&#x2F;01&#x2F;26&#x2F;2&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/md/" rel="tag">md</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'd5ced5289d8c93bbbfbe',
+        clientSecret: '5dd68b357f4f9c4e62e949d5dc5840e00d88ce82',
+        id: window.location.pathname,
+        repo: 'weixiabing.github.io',
+        owner: 'weixiabing',
+        admin: 'weixiabing'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="Search" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1643198003995"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+    <!-- baidu Analytics -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?0e33fb62c13344e415c0473084548a8e';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+
+</html>
