@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkniko=self.webpackChunkniko||[]).push([[4288],{6741:e=>{e.exports=JSON.parse('{"label":"DNS","permalink":"/tags/dns","allTagsPath":"/tags","count":1,"items":[{"id":"Guide/DNS \u914d\u7f6e\u6307\u5357","title":"DNS/DoH/DoT \u914d\u7f6e","description":"DNS \u914d\u7f6e\u6307\u5357","permalink":"/Guide/DNS \u914d\u7f6e\u6307\u5357"}]}')}}]);

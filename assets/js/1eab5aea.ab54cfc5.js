@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkniko=self.webpackChunkniko||[]).push([[3799],{6557:a=>{a.exports=JSON.parse('{"label":"JS","permalink":"/tags/js","allTagsPath":"/tags","count":1,"items":[{"id":"\u7a0b\u5e8f\u76f8\u5173/JavaScript","title":"JavaScript","description":"JavaScript \u5b66\u4e60\u7b14\u8bb0","permalink":"/\u7a0b\u5e8f\u76f8\u5173/JavaScript"}]}')}}]);
