@@ -37,7 +37,7 @@ const config = {
           
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/weixiabing/weixiabing.github.io/tree/source-main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
