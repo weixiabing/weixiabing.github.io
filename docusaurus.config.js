@@ -27,12 +27,14 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+         
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/weixiabing/weixiabing.github.io/tree/source-main/',
         },
         blog: {
           showReadingTime: true,
+          
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -59,7 +61,13 @@ const config = {
         title: 'NikoのBlog',
         hideOnScroll: true,
         items: [
+          {type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: '文档',},
+
           {to: 'blog/', label: 'blog', position: 'left'},
+          
           {
             type: 'search',
             position: 'right',
