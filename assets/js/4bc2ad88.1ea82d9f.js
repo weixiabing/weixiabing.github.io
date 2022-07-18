@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkniko=self.webpackChunkniko||[]).push([[2935],{3296:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/cf","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
