@@ -27,7 +27,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs/',
          
           // Please change this to your repo.
           editUrl: 'https://github.com/weixiabing/weixiabing.github.io/tree/source-main/',
