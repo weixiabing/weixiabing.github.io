@@ -21,7 +21,7 @@ tags: [硬件, 文档]
 
 ### 2.1 Official documents
 
-`Address`: [pwnagotchi.ai](www.pwnagotchi.ai)
+`Address`
 
 ### 2.2 BetterCap
 
