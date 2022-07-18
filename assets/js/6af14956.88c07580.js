@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkniko=self.webpackChunkniko||[]).push([[8221],{6567:i=>{i.exports=JSON.parse('{"label":"Linux","permalink":"/docs/tags/linux","allTagsPath":"/docs/tags","count":1,"items":[{"id":"Notes/Kali \u6307\u5357","title":"Kali \u6307\u5357","description":"Kali Linux \u5b66\u4e60\u7b14\u8bb0","permalink":"/docs/Notes/Kali \u6307\u5357"}]}')}}]);
