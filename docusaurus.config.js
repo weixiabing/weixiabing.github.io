@@ -54,8 +54,8 @@ const config = {
         id: 'announcementBar_2', 
         content: `⭐️ 如果你喜欢这个网站，在 <a style="color: red" target="_blank" rel="noopener noreferrer" href="https://github.com/weixiabing/weixiabing.github.io">GitHub</a> 上给它一颗 ⭐ `,
         /*backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: true,*/
+        textColor: '#091E42',*/
+        isCloseable: true,
       }, 
       navbar: {
         title: 'NikoのBlog',
