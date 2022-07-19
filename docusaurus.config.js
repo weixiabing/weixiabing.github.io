@@ -72,7 +72,11 @@ const config = {
             type: 'search',
             position: 'right',
           },
-          
+          {
+            href: 'https://nikoblog.azurewebsites.net/friends/',
+            position: 'right',
+            label: '友人帐',
+          },
           
           {
             href: 'https://github.com/weixiabing/weixiabing.github.io',
