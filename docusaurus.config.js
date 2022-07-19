@@ -73,7 +73,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://nikoblog.azurewebsites.net/friends/',
+            href: 'https://niko7357.azurewebsites.net/friends/',
             position: 'right',
             label: '友人帐',
           },
