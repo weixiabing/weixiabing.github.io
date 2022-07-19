@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/', 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/13848491.jpg',
+  favicon: 'assets/images/13848491.jpg',
   organizationName: 'weixiabing', // Usually your GitHub org/user name.
   projectName: 'weixiabing.github.io', // Usually your repo name.
   deploymentBranch: 'main',
