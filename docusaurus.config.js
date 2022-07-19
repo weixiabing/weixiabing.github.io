@@ -76,8 +76,9 @@ const config = {
           
           {
             href: 'https://github.com/weixiabing/weixiabing.github.io',
-            label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
           
         ],
