@@ -51,11 +51,11 @@ const config = {
     ({
       
       announcementBar: {
-        id: 'support_us',
+        id: 'announcementBar-2', 
         content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/weixiabing/weixiabing.github.io">GitHub</a>',
-        backgroundColor: '#fafbfc',
+        /*backgroundColor: '#fafbfc',
         textColor: '#091E42',
-        isCloseable: true,
+        isCloseable: true,*/
       }, 
       navbar: {
         title: 'NikoのBlog',
