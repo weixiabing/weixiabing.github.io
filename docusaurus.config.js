@@ -51,8 +51,8 @@ const config = {
     ({
       
       announcementBar: {
-        id: 'announcementBar-2', 
-        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/weixiabing/weixiabing.github.io">GitHub</a>',
+        id: 'announcementBar_2', 
+        content: `⭐️ 如果你喜欢这个网站，在 <a style="color: red" target="_blank" rel="noopener noreferrer" href="https://github.com/weixiabing/weixiabing.github.io">GitHub</a> 上给它一颗 ⭐ `,
         /*backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,*/
