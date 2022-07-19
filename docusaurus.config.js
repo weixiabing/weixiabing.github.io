@@ -88,12 +88,13 @@ const config = {
         ],
       }, 
       prism: { 
-        theme: darkCodeTheme,
-        lightTheme: lightCodeTheme,
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
         defaultLanguage: 'javascript',
       }, 
       colorMode: {
-        respectPrefersColorScheme: true
+        defaultMode: "dark",
+        respectPrefersColorScheme: false,
       },
       algolia: {
         // The application ID provided by Algolia
