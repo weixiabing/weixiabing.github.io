@@ -12,6 +12,10 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx(styles.heroBanner)}>
+      
+      
+
+
       <div className="container">
         <img src={logo} style={{width: 280, borderRadius: '50%'}} 
         className={styles.heroLogo}
@@ -43,3 +47,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+
