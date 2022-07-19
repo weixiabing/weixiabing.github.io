@@ -60,6 +60,7 @@
   --ifm-navbar-height: 80px;
   --ifm-link-decoration: none;
   --ifm-link-hover-decoration: none;
+  --site-primary-hue-saturation: 167 68%;
 }
 
 .docusaurus-highlight-code-line {
