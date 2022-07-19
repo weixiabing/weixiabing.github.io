@@ -8,7 +8,15 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url("https://api.maho.cc/random-img/pc.php");
+  /*background-image: url("https://api.maho.cc/random-img/pc.php");
+  网格滤镜*/
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+    url("https://api.maho.cc/random-img/pc.php");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,3 +66,4 @@
 }
 
 
+/*网格滤镜*/

@@ -88,8 +88,8 @@ const config = {
         ],
       }, 
       prism: { 
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: darkCodeTheme,
+        lightTheme: lightCodeTheme,
         defaultLanguage: 'javascript',
       }, 
       colorMode: {
