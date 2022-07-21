@@ -52,8 +52,3 @@ export default function Home() {
 }
 
 
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.async = true;
-script.src = 'https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/static/js/sakura-less.js';
-document.head.appendChild(script);   

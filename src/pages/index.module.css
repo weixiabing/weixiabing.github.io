@@ -11,7 +11,7 @@
   /*background-image: url("https://api.maho.cc/random-img/pc.php");
   网格滤镜*/
   background-image: url("https://api.maho.cc/random-img/pc.php");
-  z-index: 0;
+  z-index: -9;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,6 +74,6 @@
       浅色色块是横线颜色
   */
   background-size: 3px 3px;
-  z-index: -2;
+  z-index: -10;
   /*倒数第二层*/
 }
