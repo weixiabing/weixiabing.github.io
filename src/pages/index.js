@@ -5,8 +5,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import logo from '@site/static/img/13848491.jpg'
-import { css } from '@emotion/css'
+import logo from '@site/static/img/13848491.jpg';
+import { css } from '@emotion/css';
+import Script from 'react-load-script'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -52,3 +53,8 @@ export default function Home() {
 }
 
 
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.async = true;
+script.src = 'https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/static/js/sakura-less.js';
+document.head.appendChild(script);   
