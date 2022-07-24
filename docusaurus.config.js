@@ -73,6 +73,11 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://status.161699.xyz/',
+            position: 'right',
+            label: '探针',
+          },
+          {
             href: 'https://niko7357.azurewebsites.net/friends/',
             position: 'right',
             label: '友人帐',
