@@ -78,7 +78,7 @@ const config = {
             label: '探针',
           },
           {
-            href: 'https://niko7357.azurewebsites.net/friends/',
+            href: '/friends',
             position: 'right',
             label: '友人帐',
           },
