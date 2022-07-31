@@ -11,7 +11,7 @@ hide_table_of_contents: true
 >
 > 博客名：NikoのBlog
 >
-> 链接：https://www.weixiabing.io
+> 链接：https://www.weixiabing.github.io
 >
 > 描述：Niko只会实用的技术
 >
