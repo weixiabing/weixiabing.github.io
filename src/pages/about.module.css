@@ -1,0 +1,123 @@
+.max {
+    width: 100%;
+    height: 25rem;
+    background-color: var(--ifm-color-primary);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* 背景渐变色 - 原理2 */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* 背景尺寸 - 原理3 */
+    background-size: 600% 600%;
+    /* 循环动画 - 原理4 */
+    animation: gradientBG 5s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.heropic {
+    display: block;
+    height: 10rem;
+    margin: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.midbox {
+    width: 20rem;
+    height: 20rem;
+    /* display: flex; */
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+
+.headx {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link {
+    color: aliceblue;
+}
+
+.link:hover {
+    color: var(--docsearch-key-shadow);
+}
+
+.linkbutton {
+    width: 10rem;
+    border-radius: 15px;
+    background-color: #d3b7f6;
+    padding: 10px;
+    color: white;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.linkbutton:hover {
+    background-color: #b98dee;
+}
+
+.avatar_img {
+    height: 5rem;
+    margin: 14px;
+    border-radius: 50%;
+    border: 2px soild var(--ifm-color-primary);
+}
+
+
+.friends {
+    width: 5rem;
+    height: 19rem;
+    background-color: var(--card-background) !important;
+    margin: 20px;
+    --ifm-col-width: calc(4 / 12 * 100%);
+    flex: 0 0 var(--ifm-col-width);
+    --ifm-col-width: 100%;
+    flex: 1 0;
+    margin-left: 0;
+    max-width: var(--ifm-col-width);
+    padding: 0 var(--ifm-spacing-horizontal);
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.088),
+        0 2px 4px 0 rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+    /* width: 100%; */
+}
+
+.friends:hover {
+    border-radius: 20px;
+}
+
+[data-theme='dark'] .friends {
+    box-shadow: 0 12px 28px 0 rgba(136, 136, 136, 0.088),
+        0 2px 4px 0 rgba(100, 100, 100, 0.1);
+}
+
+.linkbutton1 {
+    width: 5rem;
+    border-radius: 7px;
+    background-color: var(--ifm-color-primary);
+    padding: 10px;
+    color: white;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 13px;
+}

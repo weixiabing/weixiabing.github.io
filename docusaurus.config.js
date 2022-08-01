@@ -78,7 +78,7 @@ const config = {
             label: '探针',
           },
           {
-            href: '/friends',
+            to: 'about',
             position: 'right',
             label: '友人帐',
           },
